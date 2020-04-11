@@ -1,0 +1,1 @@
+{'source': 'https://chicago-fire-database.s3.eu-west-2.amazonaws.com/CFD/Images/LM-237/CFD-LM-237-264-N.jpg', 'face_id': '3697b209-17ca-4b97-a926-db0df6ef185d', 'age': 52.0, 'gender': 'male', 'smile': 0.0, 'emotion': {'anger': 0.0, 'contempt': 0.0, 'disgust': 0.0, 'fear': 0.0, 'happiness': 0.0, 'neutral': 0.999, 'sadness': 0.0, 'surprise': 0.0}}

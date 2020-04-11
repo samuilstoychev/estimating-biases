@@ -1,0 +1,1 @@
+{'source': 'https://chicago-fire-database.s3.eu-west-2.amazonaws.com/CFD/Images/WF-030/CFD-WF-030-031-HC.jpg', 'face_id': 'bb688461-ff59-470e-bad4-8cb4b4ac8ff9', 'age': 22.0, 'gender': 'female', 'smile': 0.993, 'emotion': {'anger': 0.0, 'contempt': 0.005, 'disgust': 0.0, 'fear': 0.0, 'happiness': 0.993, 'neutral': 0.002, 'sadness': 0.001, 'surprise': 0.0}}

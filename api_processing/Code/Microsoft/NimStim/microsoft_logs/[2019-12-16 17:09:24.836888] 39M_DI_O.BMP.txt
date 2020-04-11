@@ -1,0 +1,1 @@
+{'source': 'https://nimstim-dataset.s3.eu-west-2.amazonaws.com/39M_DI_O.BMP', 'face_id': '1f335690-512d-4005-bf54-cde27682d4ba', 'age': 31.0, 'gender': 'male', 'smile': 0.006, 'emotion': {'anger': 0.27, 'contempt': 0.004, 'disgust': 0.151, 'fear': 0.0, 'happiness': 0.006, 'neutral': 0.564, 'sadness': 0.004, 'surprise': 0.002}}

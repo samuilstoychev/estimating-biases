@@ -1,0 +1,1 @@
+{'source': 'https://airbnb-sample.s3.eu-west-2.amazonaws.com/37e46549-6d7f-4a61-8ee8-a9afdbfba740.jpg', 'face_id': '6d1d179e-4d91-41eb-8df1-27e27d38731a', 'age': 21.0, 'gender': 'male', 'smile': 0.986, 'emotion': {'anger': 0.0, 'contempt': 0.0, 'disgust': 0.0, 'fear': 0.0, 'happiness': 0.986, 'neutral': 0.013, 'sadness': 0.0, 'surprise': 0.0}}

@@ -1,0 +1,1 @@
+{'source': 'https://nimstim-dataset.s3.eu-west-2.amazonaws.com/08F_AN_C.BMP', 'face_id': '3a471c05-9252-4992-9969-8f035c81e845', 'age': 34.0, 'gender': 'female', 'smile': 0.0, 'emotion': {'anger': 0.135, 'contempt': 0.001, 'disgust': 0.0, 'fear': 0.0, 'happiness': 0.0, 'neutral': 0.864, 'sadness': 0.0, 'surprise': 0.0}}
