@@ -1,5 +1,3 @@
-## Objectives: count unique faces, get a list of unique URLs
-
 import os
 import json
 sum = 0

@@ -1,19 +1,9 @@
-import asyncio
-import io
-import glob
-import os
-import sys
-import time
-import uuid
-import boto3
-import requests
 import csv
 from azure.cognitiveservices.vision.face import FaceClient
 from msrest.authentication import CognitiveServicesCredentials
-from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person, SnapshotObjectType, OperationStatusType
 from datetime import datetime
 
-KEY = "7f277b3127a447dfb03836f9b6934487"
+KEY = "<Insert-Key-here>"
 ENDPOINT = "https://researchprojectfaceapi.cognitiveservices.azure.com/"
 CSV_LOCATION = '../../../Datasets/AI-Generated/faces_data.csv'
 

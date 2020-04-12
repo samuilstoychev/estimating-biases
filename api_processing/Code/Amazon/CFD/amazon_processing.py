@@ -3,9 +3,8 @@ import json
 import os
 from datetime import datetime
 
-
 CHICAGO_DB_PATH = "/Users/samuilstoychev/Desktop/researchproject/api_processing/Datasets/CFD/Images"
-BUCKET_NAME = "chicago-fire-database"
+BUCKET_NAME = "<Insert-S3-bucket-name-here>"
 CFD_S3_PATH = "CFD/Images"
 amazon_rekognition = boto3.client('rekognition', region_name="eu-west-2")
 

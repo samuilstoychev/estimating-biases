@@ -1,8 +1,6 @@
 import os
-import sys, traceback
 import csv
 from datetime import datetime
-import inspect
 
 OUTPUT_FILE = 'microsoft_output.csv'
 LOGS_LOCATION = "./microsoft_logs"

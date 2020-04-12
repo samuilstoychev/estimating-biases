@@ -1,8 +1,8 @@
 import boto3
 import csv
 
-BUCKET_NAME = "nimstim-dataset-jpeg"
-PATH = "https://nimstim-dataset-jpeg.s3.eu-west-2.amazonaws.com/"
+BUCKET_NAME = "<Insert-S3-bucket-name-here>"
+PATH = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 OUTPUT_FILE = "nimstim_urls.csv"
 
 def collect_urls():

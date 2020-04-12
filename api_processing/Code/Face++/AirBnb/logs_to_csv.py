@@ -1,6 +1,5 @@
 from facepplib import FacePP
 import os
-import sys, traceback
 import csv
 from datetime import datetime
 import inspect

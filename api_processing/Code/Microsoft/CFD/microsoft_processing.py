@@ -1,23 +1,12 @@
-import asyncio
-import io
-import glob
 import os
-import sys
-import time
-import uuid
-import requests
-from urllib.parse import urlparse
-from io import BytesIO
-from PIL import Image, ImageDraw
 from azure.cognitiveservices.vision.face import FaceClient
 from msrest.authentication import CognitiveServicesCredentials
-from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person, SnapshotObjectType, OperationStatusType
 from datetime import datetime
 
-KEY = "7f277b3127a447dfb03836f9b6934487"
+KEY = "<Insert-Key-here>"
 ENDPOINT = "https://researchprojectfaceapi.cognitiveservices.azure.com/"
 CHICAGO_DB_PATH = "/Users/samuilstoychev/Desktop/researchproject/api_processing/Datasets/CFD/Images"
-S3_BUCKET_PATH = 'https://chicago-fire-database.s3.eu-west-2.amazonaws.com/CFD/Images'
+S3_BUCKET_PATH = 'https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/CFD/Images'
 
 def collect_urls():
     """ Form a list of URLs corresponding to CFD image objects in AWS S3 """

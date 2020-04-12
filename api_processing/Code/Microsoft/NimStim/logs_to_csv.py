@@ -1,8 +1,6 @@
 import os
-import sys, traceback
 import csv
 from datetime import datetime
-import inspect
 
 OUTPUT_FILE = 'microsoft_output.csv'
 LOGS_LOCATION = "./microsoft_logs"
@@ -18,7 +16,6 @@ def write_to_csv(data):
 
 def extract_file_info(img_name):
     """ Given a URL of an image, extract the gender, race and expression metadata. """
-    # Only get the actual file name
     print("Processing:", img_name)
     labels = image_name.split(".")[0]
     identifier, target_emotion, target_mouth = labels.split("_")

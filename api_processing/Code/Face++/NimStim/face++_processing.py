@@ -1,15 +1,14 @@
 from facepplib import FacePP
 import os
-import sys, traceback
 import csv
 from datetime import datetime
 import inspect
 import boto3
 
-API_KEY = "ANQgJ55SsIu0YrPuKE7R11_lWoR4_kPm"
-API_SECRET_KEY = "VsiAQMcGAAf_jZH2rrdL7GZ4FtoFjOLu"
-BUCKET_NAME = 'nimstim-dataset-jpeg'
-S3_URL = "https://nimstim-dataset-jpeg.s3.eu-west-2.amazonaws.com/"
+API_KEY = '<Insert-API-Key-here>'
+API_SECRET_KEY = '<Insert-API-Secret-Key-here>'
+BUCKET_NAME = '<Insert-S3-bucket-name-here>'
+S3_URL = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 
 facepp = FacePP(api_key=API_KEY,
                 api_secret=API_SECRET_KEY)

@@ -3,8 +3,8 @@ import json
 import os
 from datetime import datetime
 
-BUCKET_NAME = "airbnb-sample"
-S3_BUCKET_PATH = "https://airbnb-sample.s3.eu-west-2.amazonaws.com/"
+BUCKET_NAME = "<Insert-S3-bucket-name-here>"
+S3_BUCKET_PATH = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 amazon_rekognition = boto3.client('rekognition', region_name="eu-west-2")
 
 def collect_urls():

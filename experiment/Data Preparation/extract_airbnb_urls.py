@@ -1,5 +1,5 @@
 import csv
-S3_PATH = "https://airbnb-sample.s3.eu-west-2.amazonaws.com/"
+S3_PATH = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 OUTPUT_FILE = "airbnb_urls.csv"
 
 def get_successful_urls(service):

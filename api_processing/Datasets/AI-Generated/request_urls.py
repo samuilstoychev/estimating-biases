@@ -3,7 +3,7 @@ import json
 from flask import jsonify
 import itertools
 
-API_KEY = 'API-Key KyjeDwiDLw0nO1FTbOhV0w'
+API_KEY = 'API-Key <Insert-API-Key-here>'
 genders = ["male", "female"]
 ethnicities = ["white", "latino", "asian", "black"]
 ages = ["infant", "child", "young-adult", "adult", "elderly"]

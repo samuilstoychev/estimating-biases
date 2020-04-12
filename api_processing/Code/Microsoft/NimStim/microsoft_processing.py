@@ -1,28 +1,17 @@
-import asyncio
-import io
-import glob
 import os
-import sys
-import time
-import uuid
 import boto3
-import requests
-from urllib.parse import urlparse
-from io import BytesIO
-from PIL import Image, ImageDraw
 from azure.cognitiveservices.vision.face import FaceClient
 from msrest.authentication import CognitiveServicesCredentials
-from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person, SnapshotObjectType, OperationStatusType
 from datetime import datetime
 
-KEY = "7f277b3127a447dfb03836f9b6934487"
+KEY = "<Insert-API-Key-here>"
 ENDPOINT = "https://researchprojectfaceapi.cognitiveservices.azure.com/"
-S3_BUCKET_PATH = "https://nimstim-dataset.s3.eu-west-2.amazonaws.com/"
+S3_BUCKET_PATH = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 
 def collect_urls():
     image_urls = []
     s3 = boto3.resource('s3')
-    nimstim_bucket = s3.Bucket('nimstim-dataset')
+    nimstim_bucket = s3.Bucket('<Insert-S3-bucket-name-here>')
     for file in nimstim_bucket.objects.all():
         image_urls.append(S3_BUCKET_PATH + file.key)
     return image_urls
@@ -62,7 +51,7 @@ def log_output(image_url, content):
         f.close()
 
 if __name__ == "__main__":
-    urls = ['https://nimstim-dataset.s3.eu-west-2.amazonaws.com/45M_HA_X.BMP', 'https://nimstim-dataset.s3.eu-west-2.amazonaws.com/45M_SA_O.BMP']
+    urls = collect_urls()
     print("Processing " + str(len(urls)) + " urls.")
     successful = 0
     failed = []

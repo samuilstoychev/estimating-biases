@@ -2,14 +2,13 @@ from facepplib import FacePP
 import os
 import sys, traceback
 import csv
-from datetime import datetime
 import inspect
 
-API_KEY = "ANQgJ55SsIu0YrPuKE7R11_lWoR4_kPm"
-API_SECRET_KEY = "VsiAQMcGAAf_jZH2rrdL7GZ4FtoFjOLu"
+API_KEY = '<Insert-API-Key-here>'
+API_SECRET_KEY = '<Insert-API-Secret-Key-here>'
 CHICAGO_DB_PATH = "/Users/samuilstoychev/Desktop/researchproject/api_processing/Datasets/CFD/Images"
 OUTPUT_FILE = 'face++_output.csv'
-S3_BUCKET_PATH = 'https://chicago-fire-database.s3.eu-west-2.amazonaws.com/CFD/Images'
+S3_BUCKET_PATH = 'https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/CFD/Images'
 
 facepp = FacePP(api_key=API_KEY,
                 api_secret=API_SECRET_KEY)
@@ -46,7 +45,6 @@ def write_to_csv(data):
             csvwriter.writerow(tuple)
 
 def extract_file_info(file_url):
-
     """ Given a URL of an image, extract the gender, race and expression metadata. """
     # Only get the actual file name
     file_name = get_file_name(file_url).split(".")[0]

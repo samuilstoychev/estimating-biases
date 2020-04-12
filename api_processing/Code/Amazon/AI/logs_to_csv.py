@@ -19,7 +19,6 @@ def write_to_csv(data):
 
 def extract_file_info(img_name):
     """ Given a URL of an image, extract the gender, race and expression metadata. """
-    # Only get the actual file name
     print("Processing:", img_name)
     labels = image_name.split(".")[0]
     target_id, target_gender, target_race, target_age = labels.split("_")

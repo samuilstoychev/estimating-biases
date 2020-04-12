@@ -5,7 +5,7 @@ import csv
 from datetime import datetime
 
 CHICAGO_DB_PATH = "/Users/samuilstoychev/Desktop/researchproject/api_processing/Datasets/CFD/Images"
-API_KEY = '0a87ea2453a04d27be8ef263c795e147'
+API_KEY = '<Insert-API-Key-here>'
 OUTPUT_FILE = 'clarifai_output.csv'
 app = ClarifaiApp(api_key=API_KEY)
 

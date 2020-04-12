@@ -5,9 +5,9 @@ import csv
 from datetime import datetime
 import boto3
 
-API_KEY = '0a87ea2453a04d27be8ef263c795e147'
-BUCKET_NAME = 'airbnb-sample'
-S3_URL = "https://airbnb-sample.s3.eu-west-2.amazonaws.com/"
+API_KEY = '<Insert-API-Key-here>'
+BUCKET_NAME = '<Insert-S3-bucket-name-here>'
+S3_URL = "https://<Insert-S3-bucket-name-here>.s3.eu-west-2.amazonaws.com/"
 app = ClarifaiApp(api_key=API_KEY)
 
 def collect_urls():
